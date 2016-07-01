@@ -2,6 +2,8 @@ name(mustache).
 
 title('Mustache templates').
 
+requires(list_util).
+
 version('0.1.0').
 download('https://github.com/mndrix/mustache/archive/v0.1.0.zip').
 

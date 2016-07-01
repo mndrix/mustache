@@ -1,8 +1,9 @@
 :- use_module(library(mustache)).
 
-% define helper predicates here
+{|mustache(hello)||Hello world!|}.
 
 :- use_module(library(tap)).
 
-% add tests showing common usage
-todo :- fail.
+just_text :-
+    phrase(hello(_), Hello),
+    Hello == `Hello world!`.
